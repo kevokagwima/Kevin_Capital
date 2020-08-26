@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEVIN CAPITAL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="preloader">
+    <img src="./preloader.gif" alt="preloader">
+  </div>
+  <header id="home">
+    <nav id="nav">
+      <div class="logo">
+        <a href="#home">
+          <img src="./Logo.main.2.png" alt="logo">
+        </a>
+      </div>
+        <ul class="nav-links">
+          <li><a href="#home" class="links">HOME</a></li>
+          <li><a href="services.html" class="links">SERVICES</a></li>
+          <li><a href="#contact" class="links">CONTACT</a></li>
+          <li><a href="#" class="modal">MERCHENDISE</a></li>
+          <li><a href="Faq.html">FAQ </a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <br><br><br>
+    <div class="container-1">
+      <br>
+      <div class="flex-box">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h2>START INVESTING IN YOUR FUTURE</h2>
+        <p>Diversify your investments</p>
+        <button class="btn">invest now</button>
+      </div>
+    </div>
+  </main>
+  <div class="contact-container">
+    <h3>GET IN TOUCH WITH US</h3>
+    <div class="underline"></div>
+    <br>
+    <div class="form-container" id="contact">
+      <form action="contactform.php" method="post">
+        <input type="text" name="fname" placeholder="Enter your First Name" required autofocus><br><br>
+        <input type="text" name="sname" placeholder="Enter your Second Name" required autofocus><br><br>
+        <input type="email" name="email" placeholder="Enter your Email" required><br><br>
+        <input type="number" name="phone" placeholder="Enter your Phonenumber" required><br><br>
+        <textarea name="message" rows="3" cols="80" placeholder="Message" required></textarea> <br><br>
+        <button type="submit" name="submit">SUBMIT</button>
+      </form>
+    </div>
+  </div>
+  <div class="modal-overlay">
+    <div class="modal-container">
+      <h1><b>COMING SOON!!</b></h1>
+      <button class="close-btn">X</button>
+    </div>
+  </div>
+  <footer class="section">
+    <p>copyright &copy; KEVIN CAPITAL <span id="date"></span>. All rights reserved</p>
+  </footer>
+    
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    padding: 5px;
+}
+
+.logo img {
+    height: 50px;
+    align-self: center;
+}
+
+ul {
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+    letter-spacing: 3px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav-links {
+    display: none;
+    letter-spacing: 5px;
+    align-items: center;
+    padding: 5px;
+    font-size: 15px;
+    color: rgb(28, 169, 250);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(41, 182, 247);
+}
+
+.nav-links a:hover {
+    color: rgb(247, 1, 1);
+}
+
+.underline {
+    width: 80%;
+    height: 0.5px;
+    margin-top: 10px;
+    background-color: rgb(204, 174, 4);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    cursor: pointer;
+    width: 25px;
+    height: 2px;
+    margin: 5.9px;
+    background-color: rgb(204, 174, 4);
+}
+
+body {
+	background-image: url("https://wallpapercave.com/wp/wp2732981.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.section-center {
+	width: 90vw;
+	margin: 0 auto;
+    max-width: 1170px;
+}
+
+.title {
+	margin-top: 15vh;
+	margin-bottom: 4rem;
+}
+
+.title h2 {
+	color: rgb(204, 174, 4);
+	font-family: 'Fondamento', cursive;
+	font-family: 'Rowdies', cursive;
+	text-align: center;
+    font-size: 30px;
+}
+
+.section-center {
+	max-width: 620px;
+}
+
+.question {
+	background-color: rgb(80, 172, 233);
+	border-radius: 5px;
+	padding: 1rem 1rem 0 1rem;
+	margin-bottom: 2rem;
+}
+
+.question-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: capitalize;
+	padding-bottom: 1rem;
+}
+
+.question-title p {
+	margin-bottom: 0;
+	letter-spacing: 3px;
+}
+
+.question-btn {
+	font-size: 1.5rem;
+	background: transparent;
+	border-color: transparent;
+	cursor: pointer;
+	color: rgb(0, 0, 0);
+}
+
+.cross-icon {
+	font-size: 20px;
+}
+
+.question-text {
+	padding: 1rem 0 1.5rem 0;
+    border-top: 1px solid black;
+}
+
+.question-text p {
+	margin-bottom: 0;
+}
+
+.question-text {
+  display: none;
+}
+.show-text .question-text {
+  display: block;
+}
+.cross-icon {
+  display: none;
+}
+.show-text .cross-icon {
+  display: inline;
+}
+.show-text .plus-icon {
+  display: none;
+} 
+
+@media (max-width: 800px) {
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 93.5vh;
+        width: 40%;
+        top: 50.5px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+    }
+
+    .section-center {
+        width: 80%;
+    }
+
+    .burger {
+		display: block;
+		cursor: pointer;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+}
