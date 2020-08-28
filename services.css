@@ -82,6 +82,68 @@ li {
     width: 100%;
 }
 
+section {
+    display: none;
+}
+
+article {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    background: rgb(0,0,0,0.6);
+    height: 400px;
+}
+
+.portfolio {
+    background-color: white;
+    padding: 10px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px black;
+    margin-bottom: 160px;
+}
+
+.portfolio p {
+    margin-top: 10px;
+}
+
+.create {
+    margin-top: 20px;
+    cursor: pointer;
+    width: 40%;
+    padding: 6px;
+    border-radius: 3px;
+    border-color: rgb(7, 97, 231);
+    background-color: rgb(7, 97, 231);
+    color: white;
+    letter-spacing: 3px;
+}
+
+.strategies {
+    background-color: white;
+    padding: 10px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px black;
+    margin-bottom: 160px;
+}
+
+.strategies p {
+    margin-top: 10px;
+}
+
+.start {
+    margin-top: 20px;
+    cursor: pointer;
+    width: 40%;
+    padding: 6px;
+    border-radius: 3px;
+    border-color: rgb(7, 97, 231);
+    background-color: rgb(7, 97, 231);
+    color: white;
+    letter-spacing: 3px;
+}
+
 main {
     display: flex;
 }
@@ -251,12 +313,29 @@ footer p {
         grid-template-columns: auto auto;
     }
 
-    .logo img {
-        margin-left: -30px;
-    }
-
     .logo p {
         margin-left: 80px;
+    }
+
+    article {
+        display: none;
+    }
+
+    section {
+        display: block;
+        text-align: center;
+    }
+
+    .portfolio {
+        width: 60%;
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+
+    .strategies {
+        width: 60%;
+        margin-top: -90px;
+        margin-left: 100px;
     }
 
     ul {
@@ -271,11 +350,36 @@ footer p {
         background: white;
     }
 
+    main {
+        margin-top: -150px;
+    }
+
 }
 
 @media (max-width: 800px) {
     .grid-container {
         grid-template-columns: auto;
+    }
+
+    article {
+        display: none;
+    }
+
+    section {
+        display: block;
+        text-align: center;
+    }
+
+    .portfolio {
+        width: 60%;
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+
+    .strategies {
+        width: 60%;
+        margin-top: -90px;
+        margin-left: 100px;
     }
 
     .grid-item {

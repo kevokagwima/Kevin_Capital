@@ -43,6 +43,8 @@ nav {
     width: 100%;
     justify-content: space-around;
     align-items: center;
+    height: 50px;
+    background: rgba(26, 26, 26, 0.5);
 }
 
 .fixed-nav {
@@ -61,8 +63,12 @@ nav {
     justify-content: space-between;
 }
 
-.logo img {
-    height: 60px;
+.text-logo {
+    font-size: 20px;
+    color: white;
+    font-family: 'Patua One', cursive;
+    letter-spacing: 3px;
+    font-weight: lighter;
 }
 
 ul {
@@ -315,6 +321,14 @@ footer p {
         width: 300px;
     }
 
+    .logo p {
+        text-align: center;
+    }
+
+    .text-logo {
+       margin-left: 80px;
+    }
+
     .nav-links a {
         color: rgb(243, 243, 243);
     }
@@ -336,7 +350,7 @@ footer p {
     .burger {
         display: block;
         cursor: pointer;
-        margin-right: -50px;
+        margin-right: -30px;
     }
 
     .nav-active {
